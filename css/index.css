@@ -62,19 +62,24 @@ h1, h2, h3, h4, h5 {
 
 body {
 	width: 1000px;
-  margin: auto;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-header nav {
+header {
 	margin: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
+header nav {
+  margin-top: 20px;
+}
+
 header nav a {
-	padding: 10px;
-	margin-left: 20px;
+  font-weight: bold;
+	margin: 20px 30px;
 	color: gray;
 	text-decoration: none;
 }
@@ -150,8 +155,12 @@ hr {
 }
 
 .section1 {
-	height: 120px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 	margin-top: 20px;
+  margin-bottom: 60px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -170,14 +179,17 @@ hr {
 }
 
 .middle-img {
-	margin-top: 40px;
 	margin-bottom: 40px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section2 {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -203,6 +215,7 @@ hr {
 
 footer {
 	margin-top: 20px;
+  margin-left: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -229,12 +242,53 @@ h6 {
 @media (max-width: 800px) {
   body {
     width: 800px;
-    margin: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  header {
+  	display: flex;
+  	flex-direction: column-reverse;
+  	justify-content: space-between;
+    align-items: center;
+  }
+
+  header img {
+  	margin: 30px 0px;
+  }
+
+  .title {
+  	margin-top: 80px;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: center;
   }
 
   .round {
     display: none;
   }
+
+  .section1 {
+    width: 800px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .middle-img {
+  	margin-top: 40px;
+  	margin-bottom: 40px;
+  	display: block;
+  	width: 800px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .section2 {
+    width: 800px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -247,10 +301,5 @@ h6 {
     display: none;
   }
 
-
-
-  header nav img {
-
-  }
 
 }
