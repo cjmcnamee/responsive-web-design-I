@@ -136,6 +136,7 @@ header nav img {
 	border: 1.5px solid #000000;
 	background-color: #ffffff;
 	color: #000000;
+  margin-top: 10px;
 	padding: 5px 40px;
 	text-align: center;
 	text-decoration: none;
@@ -158,9 +159,8 @@ hr {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
 	margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -168,13 +168,11 @@ hr {
 
 .section1 .features {
 	padding: 10px;
-	height: 100px;
 	width: 300px;
 }
 
 .section1 .about {
 	padding: 10px;
-	height: 100px;
 	width: 300px;
 }
 
@@ -197,19 +195,16 @@ hr {
 
 .section2 .services {
 	padding: 10px;
-	height: 150px;
 	width: 250px;
 }
 
 .section2 .product {
 	padding: 10px;
-	height: 150px;
 	width: 250px;
 }
 
 .section2 .vision {
 	padding: 10px;
-	height: 150px;
 	width: 250px;
 }
 
@@ -294,11 +289,56 @@ h6 {
 @media (max-width: 500px) {
   body {
   	width: 500px;
-    margin: auto;
+  }
+
+  header {
+    width: 500px;
+  	display: flex;
+  	flex-direction: column-reverse;
+  }
+
+  header nav {
+    width: 100%;
+    text-align: center;
+  	display: flex;
+  	flex-direction: column;
+  }
+
+  header nav a {
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
 
   .round {
     display: none;
+  }
+
+  .section1 {
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+  	flex-direction: column;
+  	justify-content: space-around;
+  }
+
+  .middle-img {
+  	margin-top: 40px;
+  	margin-bottom: 40px;
+  	display: block;
+  	width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .section2 {
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+  	flex-direction: column;
+  	justify-content: space-around;
   }
 
 
